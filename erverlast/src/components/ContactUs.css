@@ -1,0 +1,454 @@
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f9f9fbf0;
+  padding: 10px 30px;
+  color: white;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 50px;
+  margin-right: 12px;
+}
+
+.brand-name {
+  font-size: 30px;
+  font-weight: bold;
+  color: black;
+  cursor: pointer;
+}
+
+.brand-name :hover {
+  color: red;
+}
+
+.nav-links a,
+.nav-actions a {
+  margin: 0 20px;
+  font-weight: bold;
+  font-size: 20px;
+  color: black;
+}
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+}
+
+.nav-links,
+.nav-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.nav-actions span {
+  font-weight: bold;
+}
+
+.lock-icon {
+  margin-left: 10px;
+}
+
+.profile-icon {
+  margin-left: 10px;
+}
+
+
+.hero-section1 {
+  height: 60%;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 20px;
+  color: white;
+}
+
+
+.hero-buttons .btn-primary,
+.hero-buttons .btn-secondary {
+  padding: 10px 20px;
+  margin-right: 10px;
+  font-weight: bold;
+  margin-left: 30px;
+  color: rgb(247, 242, 242);
+  font-size: 18px;
+}
+
+.btn-primary {
+  background-color: red;
+  color: black;
+  cursor: pointer;
+}
+
+.hero-buttons .btn-primary :hover {
+  background-color: red;
+}
+
+
+.hero-content {
+  padding: 20px;
+  text-align: center;
+  color: white;
+  font-size: 32px;
+}
+
+.contact1,
+.contact2 {
+  color: white;
+  margin: 10px auto;
+  font-size: 1rem;
+  max-width: 100%;
+  width: 100%;
+}
+
+@media (min-width: 480px) {
+
+  .contact1,
+  .contact2 {
+    font-size: 1.05rem;
+    padding: 0 20px;
+  }
+}
+
+@media (min-width: 768px) {
+
+  .contact1,
+  .contact2 {
+    font-size: 1.1rem;
+    max-width: 600px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .contact1 {
+    max-width: 800px;
+    font-size: 1.2rem;
+  }
+
+  .contact2 {
+    max-width: 700px;
+    font-size: 1.15rem;
+  }
+}
+
+.con {
+  color: red;
+  font-size: 20px;
+}
+
+.contact-info-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  background-color: #eaf4fb;
+  padding: 40px 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+.info-card {
+  flex: 1;
+  min-width: 220px;
+  max-width: 300px;
+  margin: 10px;
+  text-align: center;
+}
+
+.icon {
+  font-size: 30px;
+  color: orange;
+  margin-bottom: 10px;
+}
+
+h4 {
+  margin: 0;
+  font-size: 18px;
+  color: #000;
+}
+
+p {
+  margin-top: 10px;
+  font-size: 15px;
+  color: #333;
+  line-height: 1.6;
+}
+
+
+
+
+.product-selector-container {
+  display: flex;
+  padding: 30px;
+  gap: 40px;
+  background-color: #fff;
+  flex-wrap: wrap;
+}
+
+.left-panel {
+  width: 250px;
+  text-align: center;
+}
+
+.product-img {
+  width: 250px;
+  margin-bottom: 10px;
+  height: 250px;
+}
+
+.left-panel h3 {
+  margin: 10px 0 5px;
+}
+
+.sold-by {
+  font-size: 14px;
+  color: black;
+}
+
+.highlight1 {
+  color: black;
+  font-weight: 500;
+}
+
+.right-panel {
+  flex: 1;
+}
+
+.right-panel h2 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.radio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.radio-option {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid #ccc;
+  padding: 12px 18px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.radio-option input {
+  accent-color: teal;
+}
+
+.dropdown {
+  width: 300px;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.submit-btn {
+  background-color: red;
+  color: white;
+  padding: 12px 30px;
+  font-size: 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.everlast1 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+
+
+
+.contact-container1 {
+  display: flex;
+  flex-wrap: wrap;
+  background: #f2f2f2;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+  padding: 20px;
+  background-color: rgb(233, 228, 228);
+  max-width: 1450px;
+  margin: 50px 10px;
+}
+
+.map-container1 {
+  flex: 1;
+  min-width: 300px;
+  height: 350px;
+  padding: 10px;
+
+}
+
+.map-container1 iframe {
+  width: 90%;
+  height: 100%;
+  border: none;
+  border-radius: 8px;
+}
+
+
+.product-selector-container {
+  background: rgb(247, 247, 247);
+}
+
+.requirement-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  border: 1px solid #e0e0e0;
+  background: #12517c;
+  max-width: 1200px;
+  margin: 30px auto;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  border-top: 1px solid #ddd;
+  font-size: 16px;
+  flex-wrap: wrap;
+  background-color: #f2f2f2;
+}
+
+.social-icons {
+  display: flex;
+  gap: 22px;
+}
+
+.social-icons span {
+  font-size: 18px;
+  cursor: pointer;
+}
+
+
+.footer {
+  background-color: #003366;
+  color: white;
+  padding: 40px 20px 20px;
+  font-family: Arial, sans-serif;
+  position: relative;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: auto;
+  gap: 20px;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 300px;
+}
+
+.footer-section h3 {
+  color: red;
+  border-bottom: 2px solid #ff0000;
+  display: inline-block;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.ftcon {
+  margin-right: 200px;
+}
+
+.footer-section {
+  padding-left: 50px;
+}
+
+.footer-text p {
+  margin: 6px 0;
+  font-size: 18px;
+  text-align: left;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin: 6px 0;
+  font-size: 18px;
+  text-align: left;
+}
+
+
+.map-container iframe {
+  margin-top: 10px;
+
+}
+
+.footer-bottom {
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+  background-color: #f0f0f0;
+}
+
+.footer-bottom p {
+  color: black;
+  font-size: 16px;
+}
+
+
+
+
+/* Add this at the bottom of your existing ContactUs.css */
+
+
+
+
+@media (max-width: 480px) {
+
+
+  .submit-btn {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+
+  .radio-option {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .footer-section h3 {
+    font-size: 18px;
+  }
+
+  .footer-text p,
+  .footer-section ul li {
+    font-size: 15px;
+  }
+
+  .footer-bottom p {
+    font-size: 14px;
+  }
+}
