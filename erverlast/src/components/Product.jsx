@@ -2,7 +2,7 @@ import React from "react";
 import "./Product.css";
 import ProductCard from "./ProductCard";
 import { Link } from "react-router-dom";
-import herosImage from "../assets/productlogo1.avif";
+import herosImage from "../assets/productlogo6.avif";
 
 const Product = () => {
   const productData = [
