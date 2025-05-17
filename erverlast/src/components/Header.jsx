@@ -63,6 +63,51 @@ const Header = () => {
     },
   ];
 
+  const features = [
+  {
+    icon: "🚚",
+    title: "Timely Delivery",
+    description: "We understand the importance of deadlines. Our efficient logistics and organized production ensure prompt and hassle-free delivery."
+  },
+  {
+    icon: "🎁",
+    title: "Wide Product Range",
+    description: "From residential pathways to industrial and public infrastructure, we offer tailored solutions to suit every project requirement."
+  },
+  {
+    icon: "🏅",
+    title: "High-Quality Products",
+    description: "Our products are crafted using premium-grade materials and advanced technology, ensuring durability, strength, and superior finish."
+  },
+  {
+    icon: "💬",
+    title: "Customer-Centric Approach",
+    description: "Your satisfaction is our priority. We work closely with clients to provide customized solutions and responsive service at every stage."
+  }
+];
+
+  const reviews = [
+  {
+    name: "Sagar Deshpande",
+    location: "Pune, Maharashtra",
+    rating: 4,
+    date: "13-November-21",
+    product: "RCC Chamber",
+    response: true,
+    quality: true,
+    delivery: true,
+  },
+  {
+    name: "Deshpande Shreeram",
+    location: "Pune, Maharashtra",
+    rating: 5,
+    date: "09-June-21",
+    product: "Concrete Manhole Cover",
+    response: true,
+    quality: true,
+    delivery: false,
+  },
+];
   return (
     <div>
       {/* Part 1 */}
@@ -137,7 +182,55 @@ const Header = () => {
       </div>
 
 
+<section className="why-shop-section">
+      <h2>WHY SHOP WITH US</h2>
+      <div className="why-shop-grid">
+        {features.map((item, index) => (
+          <div className="why-card" key={index}>
+            <div className="icon">{item.icon}</div>
+            <h3>{item.title}</h3>
+            <p>{item.description}</p>
+          </div>
+        ))}
+      </div>
+    </section>
 
+   
+
+     <div className="testimonial"> 
+     <h1 >What Our Clients Say</h1>
+<p>
+  Hear directly from our satisfied customers who have trusted us for their paving and construction needs.
+</p>
+     </div>
+
+      <div className="reviews">
+  {reviews.map((rev, index) => (
+    <div className="review-card" key={index}>
+      <div className="user-badge">
+        {rev.name[0]}
+      </div>
+      <div className="review-content">
+        <p className="name">
+          <strong>{rev.name}</strong> | {rev.location}
+        </p>
+        <div className="stars small">
+          {"★".repeat(rev.rating)}{"☆".repeat(5 - rev.rating)}
+        </div>
+        <p className="product-date">
+          {rev.date} | Product Name : {rev.product}
+        </p>
+        <div className="thumbs">
+          {rev.response && <span>Response 👍</span>}
+          {rev.quality && <span>Quality 👍</span>}
+          {rev.delivery && <span>Delivery 👍</span>}
+        </div>
+        <button className="helpful-btn">Helpful</button>
+      </div>
+    </div>
+  ))}
+</div>
+    
 
 
 
