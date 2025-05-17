@@ -193,12 +193,20 @@ const Product = () => {
 
           <div className="footer-section links">
             <h3>QUICK LINKS</h3>
-            <ul>
-              <li>🏠 Home</li>
-              <li>🖼️ Gallery</li>
-              <li>👥 About Us</li>
-              <li>✉️ Contact Us</li>
-            </ul>
+ <ul>
+        <li>
+          <Link to="/">🏠 Home</Link>
+        </li>
+        <li>
+          <Link to="/product">🖼️ Gallery</Link>
+        </li>
+        <li>
+          <Link to="/about">👥 About Us</Link>
+        </li>
+        <li>
+          <Link to="/contact">✉️ Contact Us</Link>
+        </li>
+      </ul>
           </div>
 
           <div className="footer-section map">
