@@ -1,7 +1,8 @@
 import React from "react";
 import "./Header.css";
-import herosImage from "../assets/img5.jpg";
+
 import { Link } from "react-router-dom";
+import { useState, useEffect } from "react";
 
 const Header = () => {
 
@@ -108,6 +109,26 @@ const Header = () => {
     delivery: false,
   },
 ];
+
+
+const images = [
+  "/images/hero6.jpg",
+  "/images/hero5.avif",
+  "/images/hero4.avif",
+  "/images/img5.jpg",
+];
+
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImageIndex((prevIndex) =>
+        prevIndex === images.length - 1 ? 0 : prevIndex + 1
+      );
+    }, 2000); 
+
+    return () => clearInterval(interval);
+  }, []);
   return (
     <div>
       {/* Part 1 */}
@@ -124,22 +145,28 @@ const Header = () => {
         </div>
       </nav>
 
-      <section
-        className="hero-section"
-        style={{ backgroundImage: `url(${herosImage})` }}
-      >
-        <div className="hero-content4">
-          <h1><span>Welcome to Everlast!</span></h1>
+    <section
+      className="hero-section"
+      style={{ backgroundImage: `url(${images[currentImageIndex]})` }}
+    >
+      <div className="hero-content4">
+        <h1>
+          <span>Welcome to Everlast!</span>
+        </h1>
 
-          <p>We are a trusted manufacturer of high-quality <strong>Paver Blocks</strong> and
-            <strong> Concrete Kerb Stones</strong>, serving residential, commercial, and industrial projects.</p>
-          <div className="hero-buttons">
-            <Link to="/product">
-              <button className="btn-primary">Explore Our Products</button>
-            </Link>
-          </div>
+        <p>
+          We are a trusted manufacturer of high-quality{" "}
+          <strong>Paver Blocks</strong> and
+          <strong> Concrete Kerb Stones</strong>, serving residential,
+          commercial, and industrial projects.
+        </p>
+        <div className="hero-buttons">
+          <Link to="/product">
+            <button className="btn-primary">Explore Our Products</button>
+          </Link>
         </div>
-      </section>
+      </div>
+    </section>
 
       <div className="about-container">
         <div className="about-image">

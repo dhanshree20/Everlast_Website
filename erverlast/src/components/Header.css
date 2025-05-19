@@ -97,6 +97,7 @@ a {
   justify-content: flex-start;
   padding: 20px;
   color: white;
+  transition: background-image 1s ease-in-out;
 }
 
 .hero-content4 h1 {
@@ -117,21 +118,23 @@ a {
 .hero-buttons .btn-secondary {
   padding: 10px 20px;
   margin-right: 10px;
-  font-weight: bold;
   margin-left: 30px;
   color: rgb(247, 242, 242);
   font-size: 18px;
+  font-weight: bold;
 }
 
 .btn-primary {
-  background-color:red;
+  background-color: red;
   color: black;
   cursor: pointer;
+  border: none;
 }
 
-.hero-buttons .btn-primary :hover {
-    background-color: red;
+.hero-buttons .btn-primary:hover {
+  background-color: darkred;
 }
+
 
 
 @keyframes appear {
