@@ -112,8 +112,8 @@ const Header = () => {
 
 
 const images = [
-  "/images/hero6.jpg",
   "/images/hero5.avif",
+  "/images/hero6.jpg",
   "/images/hero4.avif",
   "/images/img5.jpg",
 ];

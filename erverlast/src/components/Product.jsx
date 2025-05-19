@@ -2,7 +2,7 @@ import React from "react";
 import "./Product.css";
 import ProductCard from "./ProductCard";
 import { Link } from "react-router-dom";
-import herosImage from "../assets/productlogo6.avif";
+import { useState, useEffect } from "react";
 
 const Product = () => {
   const productData = [
@@ -122,6 +122,25 @@ const Product = () => {
 
   ];
 
+
+  const images = [
+  "/images/image1.jpg",
+  "/images/image5.avif",
+  "/images/image3.avif",
+  "/images/image4.avif",
+];
+
+  const [currentImage, setCurrentImage] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImage((prevIndex) =>
+        prevIndex === images.length - 1 ? 0 : prevIndex + 1
+      );
+    }, 2000); 
+
+    return () => clearInterval(interval);
+  }, []); 
   return (
     <div>
 
@@ -141,7 +160,7 @@ const Product = () => {
 
       <section
         className="hero-section2"
-        style={{ backgroundImage: `url(${herosImage})` }}
+        style={{ backgroundImage: `url(${images[currentImage]})` }}
       >
         <div>
           <h1 className="hero-content1">PRODUCTS & SERVICES</h1>
