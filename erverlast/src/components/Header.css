@@ -88,6 +88,7 @@ a {
   margin-left: 10px;
 }
 
+
 .hero-section {
   height: 90vh;
   background-size: cover;
@@ -98,6 +99,7 @@ a {
   padding: 20px;
   color: white;
   transition: background-image 1s ease-in-out;
+  margin: 20px;
 }
 
 .hero-content4 h1 {
@@ -158,6 +160,7 @@ a {
   animation: appear linear;
   animation-timeline: view();
   animation-range: entry 0% cover 40%;
+  margin: 20px;
 }
 
 .about-image img {
@@ -223,6 +226,7 @@ a {
 .featured-products {
   padding: 40px 20px;
   text-align: center;
+  margin: 20px;
 }
 
 .featured-products h2 {
@@ -396,7 +400,7 @@ a {
   padding: 40px 20px 20px;
   font-family: Arial, sans-serif;
   position: relative;
-  margin-top: 20px;
+  margin-top: 30px;
 }
 
 .footer-container {
@@ -466,6 +470,7 @@ a {
 
 .testimonial h1 {
  text-align: center;
+ margin-top: 50px;
 }
 
 .testimonial p {
@@ -489,6 +494,9 @@ a {
   gap: 20px;
   justify-content: center;
   margin-top: 20px;
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
 }
 
 .review-card {
@@ -577,6 +585,7 @@ a {
   animation: appear linear;
   animation-timeline: view();
   animation-range: entry 0% cover 40%;
+  margin: 20px;
 }
 
 .why-shop-section h2 {

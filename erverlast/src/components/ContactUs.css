@@ -1,3 +1,16 @@
+@keyframes appear {
+  from {
+    opacity: 0;
+    scale: 0.5;
+  }
+
+  to {
+    opacity: 1;
+    scale: 1;
+  }
+}
+
+
 .navbar {
   display: flex;
   flex-wrap: wrap;
@@ -72,6 +85,7 @@
   justify-content: flex-start;
   padding: 20px;
   color: white;
+  margin: 20px;
 }
 
 
@@ -155,6 +169,10 @@
   background-color: #eaf4fb;
   padding: 40px 20px;
   font-family: 'Arial', sans-serif;
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+  margin: 20px;
 }
 
 .info-card {
@@ -287,6 +305,10 @@ p {
   background-color: rgb(233, 228, 228);
   max-width: 1450px;
   margin: 50px 10px;
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+  margin: 10px;
 }
 
 .map-container1 {
@@ -307,6 +329,10 @@ p {
 
 .product-selector-container {
   background: rgb(247, 247, 247);
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+  margin: 20px;
 }
 
 .requirement-container {

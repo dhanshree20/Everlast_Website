@@ -144,7 +144,7 @@ const images = [
           <Link to="/contact">CONTACT US</Link>
         </div>
       </nav>
-
+   <div className="header">
     <section
       className="hero-section"
       style={{ backgroundImage: `url(${images[currentImageIndex]})` }}
@@ -167,6 +167,7 @@ const images = [
         </div>
       </div>
     </section>
+    </div>
 
       <div className="about-container">
         <div className="about-image">
