@@ -1,6 +1,10 @@
 import React from "react";
+import { FaBullseye, FaEye, FaRocket } from "react-icons/fa";
+
 import "./Aboutus.css";
 import { Link } from "react-router-dom";
+
+
 
 const Aboutus = () => {
 
@@ -106,6 +110,36 @@ const Aboutus = () => {
           ))}
         </div>
       </div>
+
+          <section className="mission-section">
+      <h2 className="section-title">OUR MISSION, VISION & GOALS</h2>
+      <div className="card-container">
+        <div className="card">
+          <FaBullseye className="icon" />
+          <h3>Our Mission</h3>
+          <p>
+            Our mission is to manufacture and deliver durable, eco-friendly, and aesthetically pleasing paver blocks and kerb stones 
+  that meet the highest industry standards — while ensuring customer satisfaction through quality, integrity, and timely service.
+          </p>
+        </div>
+        <div className="card">
+          <FaEye className="icon" />
+          <h3>Our Vision</h3>
+          <p>
+         To become a nationally recognized leader in the paving and precast industry by continuously improving product quality, 
+  adopting innovative manufacturing techniques, and building long-term relationships with clients, contractors, and partners.
+          </p>
+        </div>
+        <div className="card">
+          <FaRocket className="icon" />
+          <h3>Our Goal</h3>
+          <p>
+            Our goal is to expand our reach across multiple cities and states, increase production capacity, 
+  and offer customized paving solutions for residential, commercial, and public infrastructure projects at competitive prices.
+          </p>
+        </div>
+      </div>
+    </section>
 
 
       <footer className="footer">

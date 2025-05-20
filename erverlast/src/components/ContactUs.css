@@ -328,7 +328,7 @@ p {
 
 
 .product-selector-container {
-  background: rgb(247, 247, 247);
+  background: #f8fcfe;
   animation: appear linear;
   animation-timeline: view();
   animation-range: entry 0% cover 40%;

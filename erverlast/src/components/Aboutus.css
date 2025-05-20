@@ -81,7 +81,7 @@
   align-items: center;
   gap: 40px;
   padding: 40px;
-  background-color: #fff;
+  background-color: #f8fcfe;
   animation: appear linear;
   animation-timeline: view();
   animation-range: entry 0% cover 40%;
@@ -136,10 +136,12 @@
 }
 
 .company-gallery {
-  padding: 30px;
+  padding: 20px;
   animation: appear linear;
   animation-timeline: view();
   animation-range: entry 0% cover 40%;
+  background-color: #f8fcfe;
+  margin: 20px;
 }
 
 .company-gallery h2 {
@@ -176,7 +178,7 @@
 
 .category-container {
   padding: 30px;
-  background-color: rgb(238, 234, 234);
+  background-color: #f8fcfe;
   animation: appear linear;
   animation-timeline: view();
   animation-range: entry 0% cover 40%;
@@ -192,7 +194,7 @@
 
 .category-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
   gap: 20px;
 }
 
@@ -241,6 +243,62 @@
   color: teal;
   text-decoration: underline;
   font-size: 16px;
+}
+
+
+.mission-section {
+  background-color: #f8fcfe;
+  padding: 50px 20px;
+  text-align: center;
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+  margin: 20px;
+}
+
+.section-title {
+  color: black;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.card {
+  background-color: #fff;
+  padding: 30px 25px;
+  width: 300px;
+  border-radius: 15px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.icon {
+  color: red;
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+.card h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 16px;
+  color: #333;
+  line-height: 1.5;
 }
 
 
