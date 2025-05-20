@@ -129,6 +129,8 @@ const images = [
 
     return () => clearInterval(interval);
   }, []);
+
+
   return (
     <div>
       {/* Part 1 */}
@@ -144,6 +146,8 @@ const images = [
           <Link to="/contact">CONTACT US</Link>
         </div>
       </nav>
+
+      
    <div className="header">
     <section
       className="hero-section"
